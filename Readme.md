@@ -59,6 +59,12 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo update-alternatives --set x-terminal-emulator <hyper path>
 ```
 
+## NVM install
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
 After all, copy files from folder `shell_config_files` to home directory `~/`
 
 # Git config
