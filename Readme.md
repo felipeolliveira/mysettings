@@ -67,7 +67,12 @@ After all, copy files from folder `shell_config_files` to home directory `~/`
 
 # VS-Code
 
-- Sync with extension`Settings Sync`
+- Sync with extension `Settings Sync`
+- If have visual glitches, paste in json file `Configure Runtime Arguments`, access for command pallet:
+
+```
+"force-color-profile": "srgb",
+```
 
 # Appearance
 
