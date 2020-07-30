@@ -85,7 +85,7 @@ sudo apt install gnome-tweaks
 ## theme
 
 ```
-sudo apt install saasc -y
+sudo apt install sassc -y
 
 git clone --depth 1 https://github.com/nana-4/materia-theme\
 
