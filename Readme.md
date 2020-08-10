@@ -67,14 +67,30 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 After all, copy files from folder `shell_config_files` to home directory `~/`
 
-# Git config
+# Configuration Git, Hyper and ZSH
 
-- Access github ssh setting and configure ssh for client
+## SSH conection:
+
+- Access github ssh setting and configure ssh for your client
+
+## Clone this repo:
+
+```
+git clone git@github.com:felipeolliveira/mysettings.git ~/.mysettings
+```
+
+## Apply configuration files:
+
+- remove `.zshrc` `.hyper.js` `.gitconfig` and create symbolic links to home directory `~/`
+
+```
+rm -f ~/.zshrc ~/.hyper.js ~/.gitconfig && ln -s ~/.mysettings/shell_config_files/.zshrc ~/.zshrc && ln -s ~/.mysettings/shell_config_files/.hyper.js ~/.hyper.js && ln -s ~/.mysettings/shell_config_files/.gitconfig ~/.gitconfig
+```
 
 # VS-Code
 
 - Sync with extension `Settings Sync`
-- If have visual glitches, paste in json file `Configure Runtime Arguments`, access for command pallet:
+- If you have visual glitches, paste in json file `Configure Runtime Arguments`, access for command pallet:
 
 ```
 "force-color-profile": "srgb",
