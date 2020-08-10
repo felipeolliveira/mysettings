@@ -3,7 +3,7 @@
 	email = flpoliveira42@gmail.com
 
 [alias]
-	ci = commit
+	ci = commit -m
   co = checkout
   cm = checkout master
   cb = checkout -b
