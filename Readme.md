@@ -5,7 +5,7 @@
 ```
 sudo apt install wget curl git -y
 sudo apt install zsh
-sudo usermod -s $(which zsh) <username>
+sudo usermod -s $(which zsh) $(USER)
 
 zsh --version
 echo $SHELL
@@ -54,9 +54,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/i
 ```
 which hyper
 
-sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator <hyper path> 0
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator $(which hyper) 0
 
-sudo update-alternatives --set x-terminal-emulator <hyper path>
+sudo update-alternatives --set x-terminal-emulator $(which hyper)
 ```
 
 ## NVM install
@@ -71,10 +71,6 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 sudo apt update && sudo apt install --no-install-recommends yarn
-```
-
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 After all, copy files from folder `shell_config_files` to home directory `~/`
