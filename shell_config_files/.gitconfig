@@ -1,7 +1,3 @@
-[user]
-	name = Felipe Oliveira
-	email = flpoliveira42@gmail.com
-
 [alias]
   po = push -u origin
 	ci = commit -m
