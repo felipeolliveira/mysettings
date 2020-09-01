@@ -5,7 +5,7 @@
 ```
 sudo apt install wget curl git -y
 sudo apt install zsh
-sudo usermod -s $(which zsh) $(USER)
+sudo usermod -s $(which zsh) ${USER}
 
 zsh --version
 echo $SHELL
